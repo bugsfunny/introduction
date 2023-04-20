@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<button (click)="increment()">AUGMENTE LE COUNTER</button>
+<p>{{ counter }}</p>
+<app-enfant
+  [childCounter]="counter"
+  (onDecrement)="parentDecrement($event)"
+></app-enfant>
